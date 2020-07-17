@@ -38,22 +38,22 @@ console.log("Total bricks in the building of", result)
 
 //assignment 3.4 tinyNames
 function tinyFriend(names){
-    var smallest = names[0].length  
+    var smallest = names[0].length;  
     for(var i=0; i<names.length; i++){
-        var currentName = names[i].length
+        var currentName = names[i].length;
        
         if(currentName<smallest){
-            smallest=currentName
+            smallest=currentName;
            if(smallest=currentName){
-               var getNames=names[i]      
+               var getNames=names[i];    
            }
         }
     }
 
-    return getNames
+    return getNames;
 }
-var result = tinyFriend(['Rajib', 'Honse', 'sumaiyamun', 'Rani', 'Al-amin', 'Tipu'])
-console.log(result)
+var result = tinyFriend(['Rajib', 'Honse', 'sumaiyamun', 'Rani', 'Al-amin', 'Tipu']);
+console.log(result);
 
 
 
