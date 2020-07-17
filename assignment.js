@@ -17,10 +17,10 @@ function woodCalculator(chair, table, bed){
 }
 var result = woodCalculator(2,3,7);
 console.log("Total Quebec Feet =", result);
+
 //assignment 3.3 Brick Calculator
 function brickCalculator(numberOfFloor){
-    if (numberOfFloor <=10 && numberOfFloor >=1)
-    {
+    if (numberOfFloor <=10 && numberOfFloor >=1){
         var brickNumber = numberOfFloor * 15000;
         return brickNumber;
     }else if (numberOfFloor > 10 && numberOfFloor <= 20){
@@ -29,31 +29,30 @@ function brickCalculator(numberOfFloor){
     }else if (numberOfFloor > 20){
         var brickNumber =((numberOfFloor - 20) * 10000) + 270000;
     return brickNumber;
-}else{
+    }else{
     return "Opps!!!!!";
+    }
 }
-}
-console.log(brickCalculator(30))
+var result = brickCalculator(30);
+console.log("Total bricks in the building of", result)
 
 //assignment 3.4 tinyNames
-function tinyNames(names){
-    
+function tinyFriend(names){
     var smallest = names[0].length  
     for(var i=0; i<names.length; i++){
         var currentName = names[i].length
-        //var max= Math.min(current)
        
         if(currentName<smallest){
             smallest=currentName
            if(smallest=currentName){
-               var getNams=names[i]      
+               var getNames=names[i]      
            }
         }
     }
 
-    return getNams
+    return getNames
 }
-var result = tinyNames(['Rajib', 'Honse', 'sumaiyamun', 'Rani', 'Al-amin', 'Tipu'])
+var result = tinyFriend(['Rajib', 'Honse', 'sumaiyamun', 'Rani', 'Al-amin', 'Tipu'])
 console.log(result)
 
 
